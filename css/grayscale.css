@@ -48,6 +48,12 @@ p {
 .team-member p {
   margin-top: 0;
 }
+.row.col-lg-3.hovered {
+  opacity: 1;
+}
+.row.col-lg-3:hover {
+  opacity: 0.6;
+}
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
@@ -189,7 +195,7 @@ a:focus {
 .btn-circle:focus {
   outline: none;
   color: white;
-  background: rgba(255, 255, 255, 0.1);
+  background: white;
 }
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
@@ -271,16 +277,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid white;
+  color: white;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid white;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: black;
 }
 ul.banner-social-buttons {
   margin-top: 0;
