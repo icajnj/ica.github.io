@@ -226,6 +226,19 @@
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
 
+    <script language="JavaScript">
+        var password;
+        var pass1 = "ica123!";
+        password = prompt("Enter the password to view page: ");
+        if(password == pass1) {
+            alert('Correct password, click OK to enter');
+        }
+        else {
+            window.location = "incorrect.html";
+        }
+    </script>
+
+
 </body>
 
 </html>
