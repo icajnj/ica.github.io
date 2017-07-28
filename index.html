@@ -1,51 +1,37 @@
 <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet">
 
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="css/index.css" rel="stylesheet">
-</head>
-
-<body>
-  <h2>LOGIN FORM</h2>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <form action="/action_page.php">
-          <div class="container">
-            <label><b>USERNAME</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <label><b>PASSWORD</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            <div class="buttonSpacing">
-              <button onclick="check(this.form)"><strong>LOGIN</strong></button>
-            </div>
-          </div>
-
-          
-        </form>
-      </div>
+    <title>
+      Login page
+    </title>
+  </head>
+  <body>
+    <h1><strong>LOGIN FORM</strong></h1>
+    <form name="login">
+    <div class="userpass">
+      USERNAME
     </div>
-  </div>
-  <div class="container" style="text-align: center">
-            <span class="psw" onclick="alert('Please ping @srampall to get proper login information.')"><a href="#">FORGOT PASSWORD?</a></span>
-          </div>
-
-  
-</body>
-
-<script language="javascript">
-            function check(form) { /*function to check userid & password*/
-                /*the following code checkes whether the entered userid and password are matching*/
-                if(form.uname.value == "ica" && form.psw.value == "ica123!") {
-                    location.replace('ica-main-page.html')/*opens the target page while Id & password matches*/
-                }
-                else {
-                    alert("Error Password or Username")/*displays error message*/
-                }
-            }
-        </script>
-
+    <input type="text" placeholder="Enter username" name="userid"/>
+    <div class="userpass">
+      PASSWORD
+    </div>
+    <input type="password" placeholder="Enter password" name="pswrd"/>
+    <div class="userpass"></div>
+    <input type="button" onclick="check(this.form)" value="LOGIN">
+    <div class="userpass"></div>
+    </form>
+      <script>
+        function check(form) {
+         /*the following code checkes whether the entered userid and password are matching*/
+          if(form.userid.value == "ica" && form.pswrd.value == "ica123!") {
+            location.replace('ica-main-page.html')/*opens the target page while Id & password matches*/
+          }
+          else {
+            alert("Error Password or Username")/*displays error message*/
+          }
+        }
+      </script>
+  </body>
 </html>

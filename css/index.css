@@ -1,95 +1,63 @@
 body {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #7D8E89;
+    letter-spacing: 2px;
+    background-color: #91AD94;
 }
 
-body h2 {
-    text-align: center;
-    padding-top: 100px;
+h1 {
     color: white;
-    letter-spacing: 2px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 form {
-    border: 3px solid #171738;
-}
-
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #171738;
-    box-sizing: border-box;
-}
-
-button {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #171738;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1.5px solid #2D98BF;
     color: white;
-    font-size: 25px;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    letter-spacing: 2px;
 }
 
-.buttonSpacing {
-    padding-right: 350px;
-    padding-left: 350px;
+form .form-group {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.col-md-12 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+input {
+    padding: 14px 16px;
+    width: 100%;
+    color: black;
+}
+
+input[type="text"], input[type="password"]
+{
+    font-size:18px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input[type="button"] {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 5%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+    color: black;
+    background-color: white;
+    margin: auto;
+    display: block;
 }
 
 button:hover {
-    opacity: 0.8;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 10px;
-}
-
-span.psw {
-    padding-top: 16px;
-}
-
-span.psw a {
+    background-color: black;
     color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       margin: auto;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
+.userpass {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-label {
-    color: white;
-    letter-spacing: 2px;
-}
-
